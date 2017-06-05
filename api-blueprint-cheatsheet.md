@@ -2,7 +2,8 @@
 
 # API Blueprint Cheat Sheet
 
-[API Blueprint](http://apiblueprint.org) is simple and accessible to API description document language for everybody involved in the API design lifecycle. It is plain text based on Markdown.
+[API Blueprint](http://apiblueprint.org) is a simple and accessible API description document language for everyone 
+involved in the API design lifecycle. It is plain text based on Markdown.
 
 ## Hello World
 
@@ -113,7 +114,7 @@ An action should include at least one response from the server which must includ
 
 ## Data Structures in MSON
 
-API Blueprint is built to encourage better API designs through abstraction. The goal of API Blueprint is to decouple elements of API to enable modularity while encapsulating backend implementation behavior.
+API Blueprint is built to encourage better API design through abstraction. The goal of API Blueprint is to decouple elements of API to enable modularity while encapsulating backend implementation behavior.
 
 For example, model your data first using the data description syntax.
 
@@ -142,10 +143,10 @@ Then, use and reuse the data in your API endpoints.
 
 ## FAQ
 
-+ How to add query parameter?
++ How to describe query parameters?
 
 
-+ How to response with body?
++ How to describe response with no body?
 
 ```
 ### Delete [DELETE]
