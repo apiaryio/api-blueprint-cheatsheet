@@ -2,7 +2,7 @@
 
 # API Blueprint Cheat Sheet
 
-[API Blueprint](http://apiblueprint.org) is a simple and accessible API description document language for everyone 
+[API Blueprint](http://apiblueprint.org) is a simple and accessible API description document language for everyone
 involved in the API design lifecycle. It is plain text based on Markdown.
 
 ## Hello World
@@ -15,6 +15,9 @@ involved in the API design lifecycle. It is plain text based on Markdown.
 ```
 
 ## API Blueprint Document Structure
+
+![](./api-blueprint-cheatsheet-image.png)
+
 - __Metadata__ - The blueprint starts with a metadata section. In this case we have specified that FORMAT has the value of 1A. The format keyword denotes the version of the API Blueprint.
 - __API Name & Description__ - The first heading in the blueprint serves as the name of your API, which in this case is "Polls". Headings start with one or more # symbols followed by a title. The API Name here uses one hash to distinguish it as the first level. The number of # you use will determine the level of the heading. Following the heading is a description of the API. You may use further headings to break up the description section.
 
