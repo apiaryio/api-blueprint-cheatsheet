@@ -3,7 +3,7 @@
 # API Blueprint Cheat Sheet
 
 [API Blueprint](http://apiblueprint.org) is a simple and accessible API description document language for everyone
-involved in the API design lifecycle. It is plain text based on Markdown.
+involved in the API design lifecycle. It is plain text based on Markdown. Recommended file extension for API Blueprint is `.apib`.
 
 ## Hello World
 
@@ -18,7 +18,7 @@ involved in the API design lifecycle. It is plain text based on Markdown.
 
 ![](./api-blueprint-cheatsheet-image.png)
 
-- __Metadata__ - The blueprint starts with a metadata section. In this case we have specified that FORMAT has the value of 1A. The format keyword denotes the version of the API Blueprint.
+- __Metadata__ - The blueprint starts with a metadata section. In this case we have specified that `FORMAT` has the value of `1A`. The format keyword denotes the version of the API Blueprint.
 - __API Name & Description__ - The first heading in the blueprint serves as the name of your API, which in this case is "Polls". Headings start with one or more # symbols followed by a title. The API Name here uses one hash to distinguish it as the first level. The number of # you use will determine the level of the heading. Following the heading is a description of the API. You may use further headings to break up the description section.
 
 ```
@@ -44,6 +44,14 @@ Resources related to questions in the API.
 ```
 
 - __URI Template__ - The URI for the “Question” resource uses a variable component, expressed by URI Template. In this case, there is an ID variable called question_id, represented in the URI template as {question_id}.
+
+- __URI Template Variable__ - Variable names are case-sensitive. The variable name may consists of following characters only:
+
+    - ASCII alpha numeric characters (a-z, A-Z), Decimal digits (0-9), `_`, `.`, Percent-encoded characters
+    - _Variable Reserved Values_ - `: / / / ? / # / [ / ] / @ / ! / $ / & / ' / ( / ) / * / + / , / ; / =`
+    - _Form-style Query Variable_
+        - To define variables for a form-style query use the question mark (?) operator `/path/to/resources/{varone}{?vartwo}`
+        - To continue a form-style query use the ampersand (&) operator: `/path/to/resources/{varone}?path=test{&vartwo,varthree}`
 
 - __URI Parameters__ - URI parameters should describe the URI using a list of Parameters. For “Question” it would be as follows:
 
@@ -145,9 +153,6 @@ Then, use and reuse the data in your API endpoints.
 ```
 
 ## FAQ
-
-+ How to describe query parameters?
-
 
 + How to describe response with no body?
 
