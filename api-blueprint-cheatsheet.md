@@ -2,17 +2,7 @@
 
 # API Blueprint Cheat Sheet
 
-[API Blueprint](http://apiblueprint.org) is a simple and accessible API description document language for everyone
-involved in the API design lifecycle. It is plain text based on Markdown. Recommended file extension for API Blueprint is `.apib`.
-
-## Hello World
-
-```
-# GET /message
-+ Response 200 (text/plain)
-
-        Hello World!
-```
+[API Blueprint](http://apiblueprint.org)(.apib) - API description format, plain text, Markdown-like.
 
 ## API Blueprint Document Structure
 
